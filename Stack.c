@@ -12,7 +12,7 @@ void display()
 {
 	for(int i=0;i<top;i++)
 	{
-		printf("%d ",stack[i]);		
+		printf("\n\t Stack[%d] = %d",i,stack[i]);		
 	}	
 }
 int isEmpty()
@@ -45,6 +45,7 @@ int main()
 		printf("\n\t 2.Peep");
 		printf("\n\t 3.Pop");
 		printf("\n\t 4.Update");
+		printf("\n\t 5.Display");
 		printf("\n\t 0.Exit");
 
 		printf("\n\n\t Select Your Choice : ");
@@ -79,6 +80,9 @@ int main()
 			break;
 			case 4:
 				printf("\n\tUpdate");
+			break;
+			case 5:
+				display();
 			break;
 			case 0:
 				printf("\n\tbye bye\n\n");
