@@ -1,21 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int num,arr[4][4];
+    int num,temp,arr[4][4];
     int row[4],col[4];
-    printf("\n\t Enter The Numbers of edges : ");
+    printf("\n\t Enter The Numbers of Vertices : ");
     scanf("%d", &num);
     for (int x = 1; x <= num; x++)
     {
-        printf("\n\t Edgs No %d \'s Row : ",x);
+        printf("\n\t Vertices No %d \'s Row : ",x);
         scanf("%d", &row[x]);
-        printf("\n\t Edgs No %d \'s Column : ",x);
+        printf("\n\t Vertices No %d \'s Column : ",x);
         scanf("%d", &col[x]);
     }
-    for (int x = 1; x <= 4; x++)
+    for (int x = 1; x <= num; x++)
     {
         
-        for (int i = 1; i <= 4; i++)
+        for (int i = 1; i <= num; i++)
         {     
             arr[x][i] = 0 ;
         }
@@ -27,10 +27,10 @@ int main()
     }
 
         
-        for (int i = 1; i <= 4; i++)
+        for (int i = 1; i <= num; i++)
         {     
             printf("\n\t");     
-            for (int j = 1; j <= 4; j++)
+            for (int j = 1; j <= num; j++)
             {
                 printf(" %d ",arr[i][j]);    
             }
