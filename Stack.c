@@ -22,11 +22,11 @@ void peep()
 	for(int i=top;i>=0;i--)
 	{
 		printf("\n\t| %d |",stack[i]);	
-		printf("\n\t|____|");	
 		if(i == top)
 		{
 			printf("<--top");		
-		}		
+		}
+		printf("\n\t|____|");		
 	}
 }
 int pop()
@@ -82,6 +82,7 @@ int main()
 		{
 			case 1:
 				sum = isOverflow();
+				printf("%d",top);
 				if(sum == 1)
 				{
 					printf("\n\t Stack is overflowed ");
@@ -95,6 +96,7 @@ int main()
 					if(push(data) == 1)
 					{
 						printf("\n\t Data inserted Successfully");
+						printf("Stack[%d] = %d ",top,stack[top]);
 					}
 					
 				}
