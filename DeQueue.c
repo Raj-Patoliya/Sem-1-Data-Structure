@@ -110,12 +110,12 @@ int main()
     	int pos;
     	    do
 	    {
-			printf("\n\n\t 1.Insert form Rear");
-			printf("\n\n\t 2.Delete form Rear");
-			printf("\n\n\t 3.Insert form Front");
-			printf("\n\n\t 4.Delete form Front");
+			printf("\n\n\t 1.Insert from Rear");
+			printf("\n\n\t 2.Delete from Rear");
+			printf("\n\n\t 3.Insert from Front");
+			printf("\n\n\t 4.Delete fro m Front");
 			printf("\n\n\t 5.Display");
-			printf("\n\t 0.Exit");
+			printf("\n\n\t 0.Exit");
 
 			printf("\n\n\t Select Your Choice : ");
 			scanf("%d",&ch);
